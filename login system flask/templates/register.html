@@ -1,0 +1,50 @@
+<!doctype html> <!-- This is from login page just added name you can add multiples requirements  -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+      <!-- added css to html -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Tech Recursion</title>
+  </head>
+  <body class="bg-nav">
+    <nav class="navbar bg-nav">
+        <a href="" class="navbar-brand">Tech Recursoin</a>
+    </nav>
+    <div class="container">    <!-- divide window in part window size is 12 -->
+      <div class="row">
+          <div class="col-md-8"> <!-- in this column write text -->
+           <h1 class="text-light display-4" style="font-size:80px">Bring the power of Analytics to your smartphone</h1>
+          </div>
+          <div class="col-md-4">  <!-- in this column actual login ui-->
+              <div class="card">  <!--white background-->
+               <div class="card-body">  <!--all inside card body-->
+                  <form class="form" method="post" action="/add_users"> <!--getting user input through post method in action ?add_usrs-->
+                      <!--created form-->
+                      <label>username</label><br>
+                      <input type="text" class="form-control" name="username"><br>
+                      <label>name</label><br>
+                      <input type="text" class="form-control" name="name"><br>
+                      <label>Email</label><br>
+                      <input type="email" class="form-control" name="email"><br>
+                      <label>password</label><br>
+                      <input type="password" class="form-control" name="password"><br><br>
+                      <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register">
+                 </form>
+                   <p class="mt-2">Not a member?<a href="/">Login</a> </p>
+               </div>
+              </div>
+           </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
