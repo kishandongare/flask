@@ -12,4 +12,4 @@ d) run main.py
 note-for password you can apply hashing.
 
 # 2> form
-This is basically a form fill up process 
+This is basically a form fill up process we are store input in mysql phpmyadmin database
